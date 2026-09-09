@@ -50,3 +50,7 @@ stow --dir stow --target "$HOME" shell
 The array starts empty, so the template does not link anything until you opt in.
 
 For a fuller example of a Stow layout, see [philbudden/dotfiles](https://github.com/philbudden/dotfiles).
+
+## Continuous integration
+
+The bootstrap smoke test runs on every push. It creates a fresh Ubuntu environment, installs Homebrew and the Brewfile packages, then checks that a new shell can find them.
