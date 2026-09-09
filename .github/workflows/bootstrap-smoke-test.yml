@@ -39,4 +39,4 @@ jobs:
 
       - name: Verify a new shell finds the installed tools
         run: |
-          su - dotfiles -s /bin/bash -c 'export SHELL=/bin/bash; source "$HOME/.bashrc"; command -v brew; command -v bat; command -v fd; command -v fzf; command -v gh; command -v jq; command -v rg; command -v stow'
+          su - dotfiles -s /bin/bash -c 'export SHELL=/bin/bash; bash -ic "command -v brew; command -v bat; command -v fd; command -v fzf; command -v gh; command -v jq; command -v rg; command -v stow"'
